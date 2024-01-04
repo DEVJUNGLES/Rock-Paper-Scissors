@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: grid;
+  background-color: grey;
+}
+main {
+  text-align: center;
+  margin: auto;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.594);
+  line-height: 3rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.choiceBtn {
+  line-height: 32px;
+  width: 100px;
+  border-radius: 25px !important;
+  cursor: pointer;
+  border: none !important;
+  color: yellowgreen;
+  background-color: black;
+}
