@@ -29,6 +29,16 @@ const computerTurn = () => {
   }
 };
 
+choiceBtn.forEach((e) =>
+  e.addEventListener("click", () => {
+    player = e.textContent;
+    computerTurn();
+    playerText.textContent = `Player:${player}`;
+    computerText.textContent = `Computer:${computer}`;
+    resultText.textContent = `Result: ${check()}`;
+  })
+);
+
 const check = () => {
   if (computer == player) {
     resultText.style.color = "yellow";
@@ -62,13 +72,3 @@ const check = () => {
     // return player == "Rock" ? "You win" : "You lose";
   }
 };
-
-choiceBtn.forEach((e) =>
-  e.addEventListener("click", () => {
-    player = e.textContent;
-    computerTurn();
-    playerText.textContent = `Player:${player}`;
-    computerText.textContent = `Computer:${computer}`;
-    resultText.textContent = `Result: ${check()}`;
-  })
-);
